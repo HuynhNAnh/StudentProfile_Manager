@@ -1,19 +1,121 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="#F5F5F5"
+    android:fillViewport="true">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="vertical"
+        android:padding="16dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <!-- The CardView Ho so Sinh vien -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <ImageView
+                    android:id="@+id/imgAvatar"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="#E0E0E0"
+                    android:contentDescription="Avatar"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_avatar_placeholder" />
+
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Huỳnh Ngọc Anh"
+                    android:textColor="#212121"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="MSSV: 2415053122202 | Lớp: 24T2"
+                    android:textColor="#616161"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tvGpaBadge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="#E8F5E9"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="4dp"
+                    android:text="GPA: 3.80 (Xuất sắc)"
+                    android:textColor="#2E7D32"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- 4 Nut thao tac chuc nang chinh -->
+        <Button
+            android:id="@+id/btnEditProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#34B469"
+            android:text="Chỉnh Sửa Hồ Sơ (Result API)"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnChangeAvatar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#00BCD4"
+            android:text="Đổi Avatar từ Gallery (GetContent)"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnCallHotline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#4E5D6C"
+            android:text="Gọi Cố Vấn Học Tập (Implicit)"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnRequestCamera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#FF9800"
+            android:text="Kiểm Tra Quyền Camera (Permission)"
+            android:textColor="#FFFFFF" />
+
+        <!-- Nut mo rong: Ban do Google Maps -->
+        <Button
+            android:id="@+id/btnOpenMap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#0288D1"
+            android:text="Xem Địa Chỉ Trường Học"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+</ScrollView>
