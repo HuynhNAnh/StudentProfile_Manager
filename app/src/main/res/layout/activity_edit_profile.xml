@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:gravity="center"
+            android:text="CHỈNH SỬA THÔNG TIN"
+            android:textColor="#1B2631"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="Họ và tên"
+            android:textColor="#424242"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="16dp"
+            android:background="@android:drawable/edit_text"
+            android:hint="Họ và tên"
+            android:inputType="textPersonName"
+            android:paddingHorizontal="12dp"
+            android:textColor="#212121"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="Lớp sinh hoạt"
+            android:textColor="#424242"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtClass"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="16dp"
+            android:background="@android:drawable/edit_text"
+            android:hint="Lớp sinh hoạt"
+            android:inputType="text"
+            android:paddingHorizontal="12dp"
+            android:textColor="#212121"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="Điểm GPA (0.0 - 4.0)"
+            android:textColor="#424242"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtGpa"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="28dp"
+            android:background="@android:drawable/edit_text"
+            android:hint="Điểm GPA (0.0 - 4.0)"
+            android:inputType="numberDecimal"
+            android:paddingHorizontal="12dp"
+            android:textColor="#212121"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="#34B469"
+            android:text="Lưu và Phản Hồi"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#757575"
+            android:text="Hủy Bỏ"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+</ScrollView>
